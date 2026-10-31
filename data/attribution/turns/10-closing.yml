@@ -1,0 +1,32 @@
+# Hand-verified attribution, section 10: closing statements
+# (cues 1780-1814, 1:48:37-1:50:27).
+turns:
+  - id: t279
+    speaker: moderator
+    kind: procedure
+    cues: [1780, 1785]
+    end_at: "Вие сте първи."
+    confidence: high
+    note: "Обявява по една минута за финални думи по жребия на ЦИК и дава първия ред на Гюров. Същият ред 1785 съдържа и началото на финалните му думи."
+
+  - id: t280
+    speaker: gyurov
+    kind: closing
+    cues: [1785, 1808]
+    start_at: "Към българските"
+    confidence: high
+    note: "Финални думи: открита кампания, стотици градове, десетки хиляди хора, слушане; 78 дни в служебното правителство; призив за гласуване «Гюров – Кандев», номер 4."
+
+  - id: t281
+    speaker: moderator
+    kind: transition
+    cues: [1809, 1809]
+    confidence: high
+    note: "«Госпожо, ето във вашите финални думи.»"
+
+  - id: t282
+    speaker: yotova
+    kind: closing
+    cues: [1810, 1814]
+    confidence: high
+    note: "Финални думи: благодарност за активността; балотажът е на 1 ноември, ден на исторически събития и личности; призив да гласуват «с номер 25»."

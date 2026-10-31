@@ -1,0 +1,125 @@
+# Hand-verified attribution, sample 2: foreign policy / Black Sea security
+# (cues 92-301). Section s03 continues to cue 562; this file covers only the
+# first part of it, so the section is reported as "partial".
+turns:
+  - id: t019
+    speaker: moderator
+    kind: question
+    cues: [92, 100]
+    confidence: high
+    note: "Тема: война или мир; завършва с «Андрей Гюров.»"
+
+  - id: t020
+    speaker: gyurov
+    kind: answer
+    cues: [101, 127]
+    confidence: high
+
+  - id: t021
+    speaker: moderator
+    kind: transition
+    cues: [128, 129]
+    confidence: high
+    note: "Обещава да се върне към темата за Скопие и дава реда на Йотова."
+
+  - id: t022
+    speaker: yotova
+    kind: answer
+    cues: [130, 142]
+    confidence: high
+    note: "Започва с «Аз ще започна от една реплика на господин Гюров» — т.е. отговорът е и реплика."
+
+  - id: t023
+    speaker: moderator
+    kind: question
+    cues: [143, 154]
+    confidence: high
+    note: "За инцидента с търговски кораб в Черно море; завършва с «Илияна Йотова.»"
+
+  - id: t024
+    speaker: yotova
+    kind: answer
+    cues: [155, 205]
+    confidence: high
+    note: "В средата водещата се намесва с «30 секунди.» (ред 203), след което Йотова продължава."
+    asides:
+      - cue: 203
+        speaker: moderator
+        kind: time_call
+        confidence: high
+
+  - id: t025
+    speaker: moderator
+    kind: question
+    cues: [206, 207]
+    confidence: high
+    note: "Въпросът е повторен към Гюров: как би действал като главнокомандващ."
+
+  - id: t026
+    speaker: gyurov
+    kind: answer
+    cues: [208, 233]
+    confidence: high
+    note: "Йотова поема думата на 0:16:02 (ред 225), водещата я спира (226–227) и връща реда на Гюров, който продължава от 0:16:09 с «Това, което исках да кажа също е…». Потвърдено от редактора (amb-a01)."
+    asides:
+      - cue: 225
+        speaker: yotova
+        kind: interjection
+        confidence: high
+        overlap: true
+      - cues: [226, 227]
+        speaker: moderator
+        kind: procedure
+        confidence: high
+        overlap: true
+
+  - id: t027
+    speaker: moderator
+    kind: transition
+    cues: [234, 234]
+    confidence: high
+    note: "«Реплика Илияна Йотова.»"
+
+  - id: t028
+    speaker: yotova
+    kind: reply
+    cues: [235, 264]
+    confidence: high
+    note: "Реплика по резолюцията на ООН; завършва с въпрос към Гюров за системите за дронове."
+
+  - id: t029
+    speaker: moderator
+    kind: transition
+    cues: [265, 265]
+    confidence: high
+    note: "«Отговорете, моля. Андрей Гюров.»"
+
+  - id: t030
+    speaker: gyurov
+    kind: answer
+    cues: [266, 269]
+    confidence: high
+    note: "Отговорът е прекъснат от Йотова на 0:18:51 — той не се връща към него."
+
+  - id: t031
+    speaker: yotova
+    kind: interjection
+    cues: [270, 286]
+    confidence: high
+    overlap: true
+    interrupts: t030
+    note: "Йотова поема думата и държи реда около минута; задава на Гюров въпрос за «защитата от дронове» и за ветото. Въпросът ѝ е повторен от водещата в t032, което потвърждава, че Гюров не е отговорил."
+
+  - id: t032
+    speaker: moderator
+    kind: transition
+    cues: [287, 287]
+    confidence: high
+    note: "«Бърз отговор, Андрей Гюров.»"
+
+  - id: t033
+    speaker: gyurov
+    kind: answer
+    cues: [288, 301]
+    confidence: high
+    note: "Отговор за участието на България в системата за противодронова защита на НАТО."

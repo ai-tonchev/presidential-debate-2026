@@ -1,0 +1,301 @@
+# Hand-verified attribution, sample 3: rest of section 3 (cues 302-562).
+# This stretch contains the first real crosstalk of the debate: Yotova asking
+# the moderator for the floor (525-531), Gyurov cutting into her answer (459),
+# and Yotova cutting into his (551).
+turns:
+  - id: t034
+    speaker: moderator
+    kind: procedure
+    cues: [302, 303]
+    end_at: "от тезата си."
+    confidence: high
+    note: "Водещата връща реда на Гюров; изречението ѝ е разкъсано от преписа между редове 302 и 303."
+
+  - id: t035
+    speaker: yotova
+    kind: reply
+    cues: [303, 315]
+    start_at: "Госпожо Златарева,"
+    end_at: "участваме."
+    confidence: medium
+    overlap: true
+    interrupts: t034
+    note: "Оборва твърдението за отказа от програмата за противодронова защита. Ред 312 смесва гласове: «Госпожо, и от това?» е кратка вметка на водещата към Йотова (потвърдено от редактора, amb-a02), след която Йотова продължава с «Освен това…»."
+    asides:
+      - cue: 312
+        speaker: moderator
+        kind: interjection
+        start_at: "Госпожо,"
+        end_at: "и от това?"
+        confidence: high
+        overlap: true
+
+  - id: t036
+    speaker: moderator
+    kind: procedure
+    cues: [315, 319]
+    start_at: "Нека да дадем възможност"
+    end_at: "регионалност."
+    confidence: high
+    note: "«Ще помоля все пак да говорим с факти, не с …» — краят на изречението е тежко разпознат (вж. unclear за ред 317)."
+
+  - id: t037
+    speaker: gyurov
+    kind: reply
+    cues: [319, 346]
+    start_at: "В септември месец"
+    confidence: high
+    note: "Отговор за закъснялото включване в системата; започва по средата на ред 319, след думите на водещата."
+
+  - id: t038
+    speaker: yotova
+    kind: reply
+    cues: [347, 354]
+    confidence: medium
+    note: "Съгласява се с необходимостта от развитие на системите, после подхваща темата за пропуснатите 7 години. Редове 347 и 349 са дубликат от разпознаването. Водещата се опитва да я спре още в първото изречение, но едва се чува; ред 350 е уточнението ѝ да говори с една реплика."
+    asides:
+      - cue: 350
+        speaker: moderator
+        kind: procedure
+        confidence: low
+        overlap: true
+
+  - id: t039
+    speaker: moderator
+    kind: procedure
+    cues: [355, 358]
+    confidence: high
+    note: "Спира Йотова («Това е, госпожо Йотова, моля ви») и дава реда на Гюров за реплика."
+
+  - id: t040
+    speaker: gyurov
+    kind: question
+    cues: [359, 366]
+    end_at: "запласти?"
+    confidence: high
+    note: "Извънреден въпрос към Йотова за 7-те години в президентството — не е част от регламента, което обяснява защо водещата веднага поема реда."
+
+  - id: t041
+    speaker: moderator
+    kind: question
+    cues: [366, 381]
+    start_at: "Точно за това е следващият ми"
+    confidence: medium
+    note: "Въпрос за думите на Румен Радев «война или мир» (вж. amb-a04). Фразата «Точно за това е следващият ми въпрос» е повторена два пъти от преписа."
+
+  - id: t042
+    speaker: moderator
+    kind: transition
+    cues: [382, 382]
+    confidence: high
+
+  - id: t043
+    speaker: gyurov
+    kind: answer
+    cues: [383, 398]
+    confidence: high
+    note: "Защитава тезата, че заплахата трябва да бъде назована."
+
+  - id: t044
+    speaker: moderator
+    kind: prompt
+    cues: [399, 401]
+    confidence: high
+
+  - id: t045
+    speaker: gyurov
+    kind: answer
+    cues: [402, 408]
+    confidence: high
+    note: "Продължава с темата за отбраната и технологичното развитие."
+
+  - id: t046
+    speaker: moderator
+    kind: transition
+    cues: [409, 409]
+    confidence: high
+
+  - id: t047
+    speaker: yotova
+    kind: answer
+    cues: [410, 458]
+    confidence: high
+    note: "Дълъг отговор за мира и преговорите; завършва с «война на изтощение … е път за никъде». Прекъснат от Гюров на 0:27:07."
+
+  - id: t048
+    speaker: gyurov
+    kind: reply
+    cues: [459, 470]
+    confidence: high
+    note: "Гюров просто поема думата тук (по оценка на редактора не е прекъсване): обира тезата за «войната на изтощение» и веднага задава контра-въпрос за Финландия и Путин."
+
+  - id: t049
+    speaker: yotova
+    kind: reply
+    cues: [471, 480]
+    confidence: high
+    note: "Отговаря, че подобен разговор изисква мандат, и припомня споразумението в Киев."
+
+  - id: t050
+    speaker: moderator
+    kind: transition
+    cues: [481, 481]
+    confidence: high
+
+  - id: t051
+    speaker: gyurov
+    kind: answer
+    cues: [482, 507]
+    confidence: high
+    note: "Отговор за ситуацията на сигурността; водещата го прекъсва с уточняващ въпрос на 0:28:57."
+    asides:
+      - cue: 486
+        speaker: moderator
+        kind: prompt
+        confidence: high
+        overlap: true
+
+  - id: t052
+    speaker: moderator
+    kind: transition
+    cues: [508, 508]
+    confidence: high
+    note: "«Може да отговорите?» — дава реда на Йотова."
+
+  - id: t053
+    speaker: yotova
+    kind: reply
+    cues: [509, 524]
+    confidence: high
+
+  - id: t054
+    speaker: gyurov
+    kind: procedure
+    cues: [525, 525]
+    confidence: high
+    note: "«Моля за репликата» — Гюров иска реда, за да отговори на Йотова."
+
+  - id: t055
+    speaker: yotova
+    kind: interjection
+    cues: [526, 526]
+    confidence: medium
+    overlap: true
+    note: "«Само секунда» — Йотова, която още не е приключила."
+
+  - id: t056
+    speaker: moderator
+    kind: procedure
+    cues: [527, 527]
+    confidence: high
+    note: "«Ще имате право на реплика» — към Гюров."
+
+  - id: t057
+    speaker: yotova
+    kind: interjection
+    cues: [528, 530]
+    confidence: medium
+    overlap: true
+    note: "«Както аз ви чакам, така ще чакате и вие» + «Само да не ми хапвате от секундите». В този отрязък двамата говорят един върху друг и част от думите не се разбират; атрибуцията е по смисъл, не по яснота на записа."
+
+  - id: t058
+    speaker: moderator
+    kind: procedure
+    cues: [531, 531]
+    confidence: medium
+    note: "«Не, няма.» — отговор към Йотова."
+
+  - id: t059
+    speaker: yotova
+    kind: reply
+    cues: [532, 538]
+    confidence: high
+    note: "Реплика за споразумението с Украйна и за начина, по който е подписано."
+
+  - id: t060
+    speaker: moderator
+    kind: transition
+    cues: [539, 539]
+    confidence: high
+    note: "«Нека да дадем възможност да отговори.»"
+
+  - id: t061
+    speaker: moderator
+    kind: procedure
+    cues: [540, 540]
+    confidence: medium
+    note: "«Добре, да, така е.» — водещата."
+
+  - id: t062
+    speaker: yotova
+    kind: reply
+    cues: [541, 541]
+    confidence: medium
+    note: "«Боташ искаше…» — Йотова продължава мисълта си от t059."
+
+  - id: t063
+    speaker: moderator
+    kind: procedure
+    cues: [542, 542]
+    confidence: high
+    note: "«Отговорете за Боташ и след това…» — прекъсва и връща темата."
+
+  - id: t064
+    speaker: yotova
+    kind: reply
+    cues: [543, 545]
+    confidence: high
+    note: "Обяснява защо е бил нужен договорът с Боташ."
+
+  - id: t065
+    speaker: gyurov
+    kind: interjection
+    cues: [546, 546]
+    confidence: high
+    overlap: true
+    interrupts: t064
+    note: "«Това е абсолютна манипулация.» — потвърдено от редактора, че е Гюров."
+
+  - id: t066
+    speaker: yotova
+    kind: reply
+    cues: [547, 548]
+    confidence: high
+    note: "Продължава след намесата; завършва с «Боташ … първо ще бъде полезен на българската държава»."
+
+  - id: t067
+    speaker: moderator
+    kind: transition
+    cues: [549, 549]
+    confidence: high
+
+  - id: t068
+    speaker: gyurov
+    kind: answer
+    cues: [550, 550]
+    confidence: high
+    note: "Оборва ползата от договора; изчислява разходите."
+
+  - id: t069
+    speaker: yotova
+    kind: interjection
+    cues: [551, 553]
+    confidence: low
+    overlap: true
+    interrupts: t068
+    note: "Съдържанието («Това, което виждаме…», 400 млн. долара, фалит на Булгаргаз) логически продължава репликата на Гюров от t068 и може да е негова; оставено е на Йотова със confidence=low до проверка по запис (вж. amb-a09)."
+
+  - id: t070
+    speaker: gyurov
+    kind: answer
+    cues: [554, 562]
+    confidence: high
+    note: "Връща се към споразумението с Украйна; завършва с аналогията с плана «Маршал». Водещата се намесва с «Край, свърши.» в последния ред."
+    asides:
+      - cue: 562
+        speaker: moderator
+        kind: interjection
+        start_at: "свърши."
+        end_at: "свърши."
+        confidence: high
+        overlap: true

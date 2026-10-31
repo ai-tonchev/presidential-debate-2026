@@ -1,0 +1,520 @@
+# Hand-verified attribution, section 9: personal questions
+# (cues 1609-1779, 1:37:43-1:48:33).
+#
+# A rapid Q&A: the moderator alternates between the two candidates in one- and
+# two-cue turns. The source has a 30-second gap right at the start
+# (1:37:43-1:38:18), so cue 1609 is the tail of the previous transition and 1610
+# is the middle of the moderator's first question.
+turns:
+  - id: t206
+    speaker: moderator
+    kind: question
+    cues: [1609, 1610]
+    confidence: medium
+    note: "Краят на прехода (1609, откъс) и средата на първия личен въпрос («…с който се събудихте тази сутрин?»). Между тях записът липсва (вж. gap 1:37:43–1:38:18)."
+
+  - id: t207
+    speaker: gyurov
+    kind: answer
+    cues: [1611, 1614]
+    confidence: high
+    note: "«С надежда за нещо, което предстои, което ще бъде хубаво за България.»"
+
+  - id: t208
+    speaker: moderator
+    kind: transition
+    cues: [1615, 1615]
+    confidence: medium
+    note: "Обръща се към Йотова по име; редът е разпознат частично («Илияна, и а това?»)."
+
+  - id: t209
+    speaker: yotova
+    kind: answer
+    cues: [1616, 1616]
+    confidence: high
+    note: "«С много ведро чувство.»"
+
+  - id: t210
+    speaker: moderator
+    kind: question
+    cues: [1617, 1617]
+    confidence: high
+    note: "«Какво е за вас идеалното щастие?»"
+
+  - id: t211
+    speaker: yotova
+    kind: answer
+    cues: [1618, 1618]
+    confidence: high
+    note: "«Семейството, съпруга ми, внука ми.»"
+
+  - id: t212
+    speaker: moderator
+    kind: question
+    cues: [1619, 1619]
+    confidence: high
+    note: "«А за вас?»"
+
+  - id: t213
+    speaker: gyurov
+    kind: answer
+    cues: [1620, 1621]
+    confidence: high
+    note: "«Хубава книга, топла къща, сняг.»"
+
+  - id: t214
+    speaker: moderator
+    kind: question
+    cues: [1622, 1624]
+    confidence: high
+    note: "«А коя е книгата, филмът или музиката, в която намирате утеха или вдъхновение?»"
+
+  - id: t215
+    speaker: gyurov
+    kind: answer
+    cues: [1625, 1625]
+    confidence: high
+    note: "«Любима моя книга се казва «Аристократ в Москва».» Водещата задава въпроса за книгата веднага след неговото «хубава книга, топла къща, сняг» (t213). Записът е потвърден от редактора."
+
+  - id: t216
+    speaker: moderator
+    kind: question
+    cues: [1626, 1626]
+    confidence: high
+    note: "«Защо ви е любима?»"
+
+  - id: t217
+    speaker: gyurov
+    kind: answer
+    cues: [1627, 1629]
+    confidence: high
+    note: "Защо «Аристократ в Москва»: показва как човек трябва да се пренастройва към промените в съдбата и да отговори достойно."
+
+  - id: t218
+    speaker: yotova
+    kind: answer
+    cues: [1630, 1632]
+    confidence: high
+    note: "«Поезия. Цяла една редичка съм си подредила. Започвам с Маргарита Петкова почти всяка сутрин.»"
+
+  - id: t219
+    speaker: moderator
+    kind: question
+    cues: [1633, 1633]
+    confidence: high
+    note: "«А имате ли любим стих?»"
+
+  - id: t220
+    speaker: yotova
+    kind: answer
+    cues: [1634, 1634]
+    confidence: high
+    note: "«Имам много любими стихове.»"
+
+  - id: t221
+    speaker: moderator
+    kind: question
+    cues: [1635, 1635]
+    confidence: high
+    note: "«Искате ли да споделите с нас?»"
+
+  - id: t222
+    speaker: yotova
+    kind: answer
+    cues: [1636, 1637]
+    confidence: high
+    note: "«Поезия не се чете, за да я помниш наизуст, а да я разбираш.»"
+
+  - id: t223
+    speaker: moderator
+    kind: question
+    cues: [1638, 1638]
+    confidence: high
+    note: "«Кой е политикът, на чието качество и държавническо поведение искрено се възхищавате?»"
+
+  - id: t224
+    speaker: yotova
+    kind: question
+    cues: [1639, 1639]
+    confidence: medium
+    note: "«Сега или в миналото?» — уточняващ въпрос към водещата."
+
+  - id: t225
+    speaker: moderator
+    kind: procedure
+    cues: [1640, 1640]
+    confidence: high
+    note: "«По вашия избор.»"
+
+  - id: t226
+    speaker: yotova
+    kind: answer
+    cues: [1641, 1641]
+    confidence: high
+    note: "«Любен Корнезов.»"
+
+  - id: t227
+    speaker: moderator
+    kind: question
+    cues: [1642, 1642]
+    confidence: high
+    note: "«Защо?»"
+
+  - id: t228
+    speaker: yotova
+    kind: answer
+    cues: [1643, 1648]
+    confidence: high
+    note: "Защото е един от създателите на Конституцията, на основите на законодателството; прям и честен човек, който не е търпял интриги и разделение."
+
+  - id: t229
+    speaker: moderator
+    kind: transition
+    cues: [1649, 1649]
+    confidence: high
+    note: "«Андрей Гюров.»"
+
+  - id: t230
+    speaker: gyurov
+    kind: answer
+    cues: [1650, 1651]
+    confidence: high
+    note: "«В сегашната ситуация се възхищавам изключително на Марк Карни, канадския премиер…»"
+
+  - id: t231
+    speaker: moderator
+    kind: question
+    cues: [1652, 1652]
+    confidence: high
+    note: "«Кое негово решение точно провокира тези симпатии във вас?»"
+
+  - id: t232
+    speaker: gyurov
+    kind: answer
+    cues: [1653, 1654]
+    confidence: high
+    note: "«Това, че не се поколебава да казва истината.»"
+
+  - id: t233
+    speaker: moderator
+    kind: question
+    cues: [1655, 1657]
+    confidence: high
+    note: "«Кой е опората, учителят, съветникът в най-личните и трудни моменти за вас, госпожо Йотова?»"
+
+  - id: t234
+    speaker: yotova
+    kind: answer
+    cues: [1658, 1658]
+    confidence: high
+    note: "«Майка ми.»"
+
+  - id: t235
+    speaker: moderator
+    kind: question
+    cues: [1659, 1659]
+    confidence: high
+    note: "«А за вас?»"
+
+  - id: t236
+    speaker: yotova
+    kind: interjection
+    cues: [1660, 1660]
+    confidence: medium
+    note: "«Защото, може ли да продължа само една реплика?» — иска думата, за да допълни."
+
+  - id: t237
+    speaker: moderator
+    kind: procedure
+    cues: [1661, 1661]
+    confidence: high
+    note: "«Разбира се.»"
+
+  - id: t238
+    speaker: yotova
+    kind: answer
+    cues: [1662, 1663]
+    confidence: high
+    note: "«Твърде рано убиха баща ми. Иначе беше той.»"
+
+  - id: t239
+    speaker: moderator
+    kind: question
+    cues: [1664, 1664]
+    confidence: high
+    note: "«Вашият отговор?»"
+
+  - id: t240
+    speaker: gyurov
+    kind: answer
+    cues: [1665, 1665]
+    confidence: high
+    note: "«Моята съпруга.»"
+
+  - id: t241
+    speaker: moderator
+    kind: question
+    cues: [1666, 1666]
+    confidence: high
+    note: "«Защо?»"
+
+  - id: t242
+    speaker: gyurov
+    kind: answer
+    cues: [1667, 1669]
+    confidence: high
+    note: "32 години заедно, от студентската скамейка, през работа и семейство в чужбина, обратно в България; винаги намират опора един в друг."
+
+  - id: t243
+    speaker: moderator
+    kind: question
+    cues: [1670, 1672]
+    confidence: high
+    note: "Задава въпроса за вицепрезидентските кандидати: с какво техният е по-добър."
+
+  - id: t244
+    speaker: gyurov
+    kind: answer
+    cues: [1673, 1675]
+    confidence: high
+    note: "Опитът на Кандев в прилагането на закона и сигурността; двамата се допълват — той с юридическото образование, Гюров с икономиката и финансите."
+
+  - id: t245
+    speaker: moderator
+    kind: question
+    cues: [1676, 1676]
+    confidence: high
+    note: "«Госпожа Йотова, с какво е вашият кандидат за вицепрезидент?»"
+
+  - id: t246
+    speaker: yotova
+    kind: answer
+    cues: [1677, 1696]
+    confidence: high
+    note: "Отказва сравнение и говори за Илиян Вълчев: човек на словото и на правото; девет години е изпълнявала функциите на вицепрезидент; работата с българските общности зад граница."
+
+  - id: t247
+    speaker: moderator
+    kind: question
+    cues: [1697, 1700]
+    confidence: medium
+    note: "«Все още имам до финала… Имам още два въпроса… Нека да изпълним до край регламента.» После пита за качеството, на което се възхищават в опонента, и за слабото му място."
+
+  - id: t248
+    speaker: gyurov
+    kind: answer
+    cues: [1701, 1705]
+    confidence: high
+    note: "Възхищава се на работата на Йотова с българските общности в чужбина; критиката му е, че не може да бъде коректив на управлението, а «придатък на изпълнителната власт»."
+
+  - id: t249
+    speaker: moderator
+    kind: transition
+    cues: [1706, 1706]
+    confidence: high
+    note: "«И вашият отговор, госпожа Йотова?»"
+
+  - id: t250
+    speaker: yotova
+    kind: answer
+    cues: [1707, 1708]
+    confidence: high
+    note: "За диалога и съгласието вместо самоцелни войни между институции; за Гюров — «толкова малко го познавам, че нямам мнение»."
+
+  - id: t251
+    speaker: moderator
+    kind: question
+    cues: [1709, 1709]
+    confidence: high
+    note: "«Като какъв искате да ви запомнят… умиротворител или боец?»"
+
+  - id: t252
+    speaker: gyurov
+    kind: answer
+    cues: [1710, 1711]
+    confidence: high
+    note: "Като миротворител; иска да върне доверието в институцията и да не се дели обществото на «наши и ваши»."
+
+  - id: t253
+    speaker: moderator
+    kind: question
+    cues: [1712, 1713]
+    confidence: high
+    note: "«Как ще го постигнете? Коя е идеята, около която бихте обединили това разединено общество?»"
+
+  - id: t254
+    speaker: gyurov
+    kind: answer
+    cues: [1714, 1714]
+    end_at: "Националната кауза."
+    confidence: medium
+    note: "«Националната кауза.» — отговорът; същият ред държи и подканата на водещата."
+
+  - id: t255
+    speaker: moderator
+    kind: prompt
+    cues: [1714, 1714]
+    start_at: "Може ли да я формулирате сега?"
+    confidence: medium
+    note: "«Може ли да я формулирате сега?»"
+
+  - id: t256
+    speaker: gyurov
+    kind: answer
+    cues: [1715, 1716]
+    confidence: high
+    note: "Националната кауза е «да живеем по-добре»; най-спешните теми са образованието и здравеопазването."
+
+  - id: t257
+    speaker: moderator
+    kind: question
+    cues: [1717, 1717]
+    confidence: high
+    note: "«Но как ще убедите тези, които не са ваши симпатизанти?»"
+
+  - id: t258
+    speaker: gyurov
+    kind: answer
+    cues: [1718, 1719]
+    confidence: high
+    note: "«С диалог, със събирането на всички институции на една маса и с търсенето на общото…»"
+
+  - id: t259
+    speaker: moderator
+    kind: question
+    cues: [1720, 1721]
+    confidence: high
+    note: "Повтаря въпроса за Йотова: «Като президентът омиротворител или като президентът боец?»"
+
+  - id: t260
+    speaker: yotova
+    kind: answer
+    cues: [1722, 1739]
+    confidence: high
+    note: "«Аз вече го правя» — от януари разговаря с всички партии и групи, прави служебни кабинети и политики; едновременно ще бъде и боец «винаги за България»; припомня думите на Урсула фон дер Лайен."
+
+  - id: t261
+    speaker: moderator
+    kind: question
+    cues: [1740, 1740]
+    confidence: high
+    note: "«Личният ви успех и най-голяма гордост, господин Гюров?»"
+
+  - id: t262
+    speaker: gyurov
+    kind: answer
+    cues: [1741, 1741]
+    confidence: high
+    note: "«Семейството ми.»"
+
+  - id: t263
+    speaker: moderator
+    kind: question
+    cues: [1742, 1742]
+    confidence: high
+    note: "«Защо?»"
+
+  - id: t264
+    speaker: gyurov
+    kind: answer
+    cues: [1743, 1743]
+    confidence: high
+    note: "«Защото имам прекрасни синове… те са истински човеци.»"
+
+  - id: t265
+    speaker: moderator
+    kind: question
+    cues: [1744, 1744]
+    confidence: high
+    note: "Същият въпрос към Йотова, с молба да е кратка."
+
+  - id: t266
+    speaker: yotova
+    kind: answer
+    cues: [1745, 1751]
+    confidence: high
+    note: "Успех е да бъде до близките си; най-голям успех — че всичките тези години е работила за страната си."
+
+  - id: t267
+    speaker: moderator
+    kind: question
+    cues: [1752, 1752]
+    confidence: high
+    note: "«Последен въпрос. Идеалното щастие за вас?»"
+
+  - id: t268
+    speaker: yotova
+    kind: answer
+    cues: [1753, 1753]
+    confidence: high
+    note: "«Спокойствието.»"
+
+  - id: t269
+    speaker: moderator
+    kind: question
+    cues: [1754, 1754]
+    confidence: high
+    note: "«Толкова ли ви липсва?»"
+
+  - id: t270
+    speaker: yotova
+    kind: answer
+    cues: [1755, 1758]
+    confidence: high
+    note: "Има периоди, в които спокойствието липсва, и такива, в които трябва да се наблегне на него."
+
+  - id: t271
+    speaker: moderator
+    kind: question
+    cues: [1759, 1759]
+    confidence: high
+    note: "«За вас с една дума, какво е щастието?»"
+
+  - id: t272
+    speaker: gyurov
+    kind: answer
+    cues: [1760, 1761]
+    confidence: high
+    note: "«Две са. Любовта и енергията.»"
+
+  - id: t273
+    speaker: moderator
+    kind: closing
+    cues: [1762, 1766]
+    confidence: high
+    note: "Повтаря «Любовта и енергията», благодари и закрива личната част: «успяхме да свалим костюма на държавника и да видим Илияна и Андрей»."
+
+  - id: t274
+    speaker: yotova
+    kind: interjection
+    cues: [1767, 1768]
+    confidence: medium
+    note: "«Да, като казват Андрей…» — шега за собственото ѝ семейство (съпругът ѝ също е Андрей); редът е отрязан."
+
+  - id: t275
+    speaker: moderator
+    kind: procedure
+    cues: [1769, 1769]
+    confidence: high
+    note: "«Това не е критична реплика, господин Гюров.»"
+
+  - id: t276
+    speaker: yotova
+    kind: reply
+    cues: [1770, 1772]
+    confidence: high
+    note: "«Моля ви, не закачайте семейството ми…»"
+
+  - id: t277
+    speaker: moderator
+    kind: procedure
+    cues: [1773, 1774]
+    confidence: high
+    note: "«Можете да отговорите, ако желаете, и ще ви дам възможност за финални думи.»"
+
+  - id: t278
+    speaker: gyurov
+    kind: reply
+    cues: [1775, 1779]
+    confidence: high
+    note: "«В нито един момент не съм говорил нито срещу госпожа Йотова, нито срещу нейното семейство…»"

@@ -1,0 +1,274 @@
+/* Print stylesheet for the structured debate transcript.
+   Body: Source Serif 4 (Bulgarian Cyrillic forms via locl).
+   Headings: Ysabeau (Bulgarian Cyrillic forms via locl). */
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../../assets/fonts/SourceSerif4-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../../assets/fonts/SourceSerif4-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../../assets/fonts/SourceSerif4-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ysabeau";
+  src: url("../../assets/fonts/Ysabeau-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ysabeau";
+  src: url("../../assets/fonts/Ysabeau-Bold.ttf");
+  font-weight: 700;
+}
+
+:root {
+  --ink: #1b1b1b;
+  --muted: #6b6b6b;
+  --rule: #d9d2c5;
+  --accent: #123a63;
+  --accent-2: #8a1c24;
+  --paper: #ffffff;
+}
+
+@page {
+  size: A4;
+  margin: 21mm 19mm 18mm;
+  @top-left {
+    content: "Дебат Йотова – Гюров · БНТ · 29.10.2026";
+    font-family: "Ysabeau", sans-serif;
+    font-size: 7.6pt;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  @top-right {
+    content: string(sectiontitle);
+    font-family: "Ysabeau", sans-serif;
+    font-size: 7.6pt;
+    color: var(--muted);
+  }
+  @bottom-center {
+    content: counter(page);
+    font-family: "Ysabeau", sans-serif;
+    font-size: 8pt;
+    color: var(--muted);
+  }
+}
+
+@page :first {
+  margin: 0;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-center { content: none; }
+}
+
+html {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 10.6pt;
+  line-height: 1.58;
+  color: var(--ink);
+  hyphens: auto;
+}
+
+p { margin: 0 0 0.62em; text-align: justify; }
+
+/* ---------- cover ---------- */
+.cover {
+
+  height: 297mm;
+  display: flex;
+  flex-direction: column;
+}
+.cover img {
+  width: 210mm;
+  height: 128mm;
+  object-fit: cover;
+  object-position: 50% 32%;
+}
+.cover .inner {
+  padding: 16mm 19mm 0;
+}
+.cover .kicker {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 8.4pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 5mm;
+}
+.cover h1 {
+  font-family: "Ysabeau", sans-serif;
+  font-weight: 700;
+  font-size: 25pt;
+  line-height: 1.14;
+  margin: 0 0 4mm;
+  color: var(--accent);
+}
+.cover .sub {
+  font-size: 11.4pt;
+  color: var(--muted);
+  margin: 0 0 8mm;
+}
+.cover .credit {
+  font-size: 8pt;
+  color: var(--muted);
+  border-top: 0.4pt solid var(--rule);
+  padding-top: 2.5mm;
+}
+
+/* ---------- front matter ---------- */
+h2, h3 {
+  font-family: "Ysabeau", sans-serif;
+  color: var(--accent);
+  font-weight: 700;
+  string-set: sectiontitle content();
+}
+h2 {
+  font-size: 15pt;
+  margin: 0 0 1.5mm;
+  page-break-after: avoid;
+}
+.range {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 8pt;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 5mm;
+  text-align: left;
+}
+.notice {
+  border: 0.5pt solid var(--rule);
+  background: #faf8f4;
+  padding: 4mm 5mm;
+  margin: 6mm 0;
+  font-size: 8.9pt;
+  line-height: 1.5;
+}
+.notice h3 { font-size: 9.4pt; margin: 0 0 2mm; letter-spacing: 0.02em; }
+.notice ul { margin: 0; padding-left: 4.5mm; }
+.notice li { margin-bottom: 1.2mm; text-align: left; }
+.legend { font-size: 8.2pt; color: var(--muted); margin: 2mm 0 0; text-align: left; }
+.legend .flag { color: var(--accent-2); font-weight: 700; }
+
+table.people {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.2pt;
+  margin: 3mm 0 5mm;
+}
+table.people th:nth-child(1) { width: 13%; }
+table.people th:nth-child(2) { width: 23%; }
+table.people td:nth-child(1), table.people td:nth-child(2) { white-space: nowrap; }
+table.people th, table.people td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1.6mm 3mm 1.6mm 0;
+  border-bottom: 0.4pt solid var(--rule);
+}
+table.people th {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 7.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.toc { margin-top: 6mm; }
+.toc ol { list-style: none; padding: 0; margin: 0; }
+.toc li {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 9.6pt;
+  padding: 1.4mm 0;
+  border-bottom: 0.3pt solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.toc a { color: var(--ink); text-decoration: none; }
+.toc .t { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 8.6pt; }
+.toc a::after { content: target-counter(attr(href), page); color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc .planned { color: #9a9a9a; }
+
+/* ---------- transcript ---------- */
+.section { page-break-before: always; }
+.turn { page-break-inside: auto; margin-bottom: 3.4mm; }
+.speaker {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 8.6pt;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: var(--accent);
+  margin: 0 0 1mm;
+  text-align: left;
+  page-break-after: avoid;
+}
+.speaker .who { font-weight: 700; }
+.speaker .when {
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 2.2mm;
+  font-variant-numeric: tabular-nums;
+}
+.speaker .flag {
+  color: var(--accent-2);
+  font-weight: 700;
+  margin-left: 1.5mm;
+}
+
+.aside {
+  margin: 2mm 0 2.6mm 4mm;
+  padding: 1.2mm 0 1.2mm 4mm;
+  border-left: 2pt solid var(--accent-2);
+  font-size: 9.2pt;
+  font-style: italic;
+  color: #3a3a3a;
+  page-break-inside: avoid;
+}
+.aside .who {
+  font-family: "Ysabeau", sans-serif;
+  font-style: normal;
+  font-size: 7.6pt;
+  letter-spacing: 0.05em;
+  color: var(--accent-2);
+  display: block;
+  margin-bottom: 0.8mm;
+}
+.aside p { text-align: left; margin: 0; }
+
+/* ---------- apparatus ---------- */
+.appendix { page-break-before: always; }
+.appendix h2 { margin-bottom: 4mm; }
+.appendix p, .appendix li { font-size: 9.2pt; text-align: left; }
+ul.amb { list-style: none; padding: 0; margin: 3mm 0; }
+ul.amb li { margin: 0 0 4mm; padding-bottom: 2.5mm; border-bottom: 0.3pt solid var(--rule); page-break-inside: avoid; }
+ul.amb .t { font-family: "Ysabeau", sans-serif; font-size: 8.6pt; font-weight: 700; color: var(--accent); }
+ul.amb .cues { font-family: "Ysabeau", sans-serif; font-size: 7.6pt; color: var(--muted); margin-left: 2mm; }
+ul.amb .badge.open { font-family: "Ysabeau", sans-serif; font-size: 7pt; color: #fff; background: var(--accent-2); padding: 0.4mm 1.6mm; border-radius: 2pt; margin-left: 2mm; }
+ul.amb blockquote.q { margin: 1.2mm 0 1.2mm 0; padding-left: 3mm; border-left: 1.5pt solid var(--rule); font-style: italic; font-size: 9.4pt; color: #333; }
+ul.amb p { font-size: 8.9pt; margin: 0.8mm 0; text-align: left; }
+ul.amb .reading { color: #555; }
+
+table.corr { width: 100%; border-collapse: collapse; font-size: 8.4pt; margin-top: 2mm; }
+table.corr th, table.corr td {
+  border-bottom: 0.3pt solid var(--rule);
+  padding: 1.2mm 2mm 1.2mm 0;
+  vertical-align: top;
+  text-align: left;
+}
+table.corr th {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 7.6pt;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.conventions { font-size: 8.6pt; color: #444; }
+.conventions li { margin-bottom: 1mm; }

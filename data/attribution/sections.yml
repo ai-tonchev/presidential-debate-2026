@@ -1,0 +1,41 @@
+# Section plan for the whole recording (cue numbers = line numbers in
+# data/source/transcript-raw.txt). The plan is derived from the moderator's
+# topic transitions; it is intentionally coarser than the turn map.
+#
+# Never edit boundaries silently: if a boundary is wrong, record why in
+# docs/ATTRIBUTION-NOTES.md, because section boundaries are editorial claims
+# about the debate's structure.
+sections:
+  - id: s01
+    title: "Встъпление"
+    cues: [4, 18]
+  - id: s02
+    title: "Избирателна активност и партийна подкрепа"
+    cues: [19, 91]
+  - id: s03
+    title: "Външна политика и сигурност: война и мир, Черно море"
+    cues: [92, 562]
+  - id: s04
+    title: "Национален суверенитет и съюзническо присъствие"
+    cues: [563, 680]
+  - id: s05
+    title: "Отношения със Скопие"
+    cues: [681, 766]
+  - id: s06
+    title: "Институции, Конституция и служебни кабинети"
+    cues: [767, 1006]
+  - id: s07
+    title: "Бюджет, цени и инфлация"
+    cues: [1007, 1297]
+  - id: s08
+    title: "Взаимни въпроси между кандидатите"
+    cues: [1298, 1608]
+  - id: s09
+    title: "Лични въпроси"
+    cues: [1609, 1779]
+  - id: s10
+    title: "Заключителни думи"
+    cues: [1780, 1814]
+  - id: s11
+    title: "Закриване"
+    cues: [1815, 1833]

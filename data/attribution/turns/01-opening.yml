@@ -1,0 +1,123 @@
+# Hand-verified attribution, sample 1: opening + first two exchanges (cues 4-91).
+# Cue numbers are line numbers in data/source/transcript-raw.txt.
+# Every turn must be contiguous with the next one; the builder aborts otherwise.
+turns:
+  - id: t001
+    speaker: moderator
+    kind: opening
+    cues: [4, 8]
+    confidence: high
+    note: "Встъпителен текст. Възможно е да е четен от водещата, но не е изключено да е предварително записан глас извън студиото (вж. amb-a05)."
+
+  - id: t002
+    speaker: moderator
+    kind: procedure
+    cues: [9, 11]
+    confidence: medium
+    note: "«Започваме по реда, определен от жребия на ЦИК» — в преписа «определено тежреби на ЦИК» (вж. unclear-11)."
+
+  - id: t003
+    speaker: moderator
+    kind: greeting
+    cues: [12, 12]
+    confidence: high
+
+  - id: t004
+    speaker: gyurov
+    kind: greeting
+    cues: [13, 13]
+    confidence: high
+
+  - id: t005
+    speaker: moderator
+    kind: greeting
+    cues: [14, 14]
+    confidence: high
+    note: "В преписа «госпожа Йотов» — отсечено окончание."
+
+  - id: t006
+    speaker: yotova
+    kind: greeting
+    cues: [15, 17]
+    confidence: medium
+    note: "Поздрав към водещата, към Гюров и към зрителите; границата с Гюров е по обръщенията (вж. amb-a06)."
+
+  - id: t007
+    speaker: moderator
+    kind: transition
+    cues: [18, 18]
+    confidence: high
+
+  - id: t008
+    speaker: moderator
+    kind: question
+    cues: [19, 23]
+    confidence: high
+    note: "Въпрос за ниската избирателна активност; завършва с «Първи е господин Гюров.»"
+
+  - id: t009
+    speaker: gyurov
+    kind: answer
+    cues: [24, 36]
+    confidence: high
+
+  - id: t010
+    speaker: moderator
+    kind: transition
+    cues: [37, 37]
+    confidence: high
+
+  - id: t011
+    speaker: yotova
+    kind: answer
+    cues: [38, 58]
+    confidence: high
+    note: "Отговорът е прекъснат от напомняне за времето (t012), но Йотова не се връща към него."
+
+  - id: t012
+    speaker: moderator
+    kind: time_call
+    cues: [59, 59]
+    confidence: high
+
+  - id: t013
+    speaker: moderator
+    kind: question
+    cues: [60, 73]
+    confidence: high
+    note: "Въпрос за политическата подкрепа на балотажа; завършва с «Нека започнем първо с вас, госпожа Йотова»."
+
+  - id: t014
+    speaker: yotova
+    kind: answer
+    cues: [74, 81]
+    confidence: high
+    note: "Завършва с контра-въпрос към Гюров («…какво им обещахте господин Гюров»), на който той отговаря в следващата реплика."
+
+  - id: t015
+    speaker: moderator
+    kind: transition
+    cues: [82, 82]
+    confidence: high
+
+  - id: t016
+    speaker: gyurov
+    kind: answer
+    cues: [83, 88]
+    end_at: "Това е отговора."
+    confidence: high
+    note: "Ред 88 съдържа думи и на Гюров («Това е отговора.»), и на водещата («Вие имате още 10 секунди.»); разрязан по смисъл."
+
+  - id: t017
+    speaker: moderator
+    kind: time_call
+    cues: [88, 88]
+    start_at: "Вие имате още 10 секунди."
+    confidence: high
+
+  - id: t018
+    speaker: gyurov
+    kind: answer
+    cues: [89, 91]
+    confidence: high
+    note: "Продължение на отговора след напомнянето за времето."

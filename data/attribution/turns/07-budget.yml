@@ -1,0 +1,280 @@
+# Hand-verified attribution, section 7: budget, prices, inflation
+# (cues 1007-1297, 1:05:47-1:19:46).
+#
+# The messiest stretch of the debate so far: around 1:10:00-1:10:35 the two
+# candidates and the moderator talk over each other in one- and two-cue turns.
+# Several turns there are medium by necessity; the whole zone is written up in
+# amb-a13 and amb-a14 rather than presented as certain.
+turns:
+  - id: t129
+    speaker: moderator
+    kind: transition
+    cues: [1007, 1007]
+    confidence: high
+    note: "«Моля за бърз отговор и влизаме така директно, летящ старт в другата тема за бюджет и финансите.» — открива s07."
+
+  - id: t130
+    speaker: yotova
+    kind: reply
+    cues: [1008, 1011]
+    confidence: medium
+    note: "Продължава спора от s06: отбранява тезата, че «урязването на трудовите права» е съществен дефект на бюджета; «най-големият дефект … беше в това, че направи българските граждани по-бедни»."
+
+  - id: t131
+    speaker: moderator
+    kind: procedure
+    cues: [1012, 1012]
+    confidence: high
+    note: "«Сега, искате ли да спрем да говорим за минало време?»"
+
+  - id: t132
+    speaker: yotova
+    kind: interjection
+    cues: [1013, 1013]
+    confidence: medium
+    truncated: true
+    note: "«Не, не, тук трябва да говорим, защото…» — изречението е отрязано от водещата. Може да е и на Гюров; приписано е на Йотова, защото тя говореше преди това и настоява да продължи."
+
+  - id: t133
+    speaker: moderator
+    kind: procedure
+    cues: [1014, 1015]
+    confidence: high
+    note: "«Много е любопитно и много интересно наистина това, което чуваме… Но е важен въпросът, какво правим оттук насетне.»"
+
+  - id: t134
+    speaker: yotova
+    kind: reply
+    cues: [1016, 1024]
+    confidence: high
+    note: "«Точно, но трябва да знаем откъде тръгваме, госпожо Златарева…» Сетне се обръща към Гюров за удължителния бюджет и парите от Българската банка за развитие."
+
+  - id: t135
+    speaker: moderator
+    kind: procedure
+    cues: [1025, 1025]
+    confidence: medium
+    note: "«Да изчистим тази възможност.» — къса Йотова."
+
+  - id: t136
+    speaker: yotova
+    kind: interjection
+    cues: [1026, 1026]
+    confidence: medium
+    note: "«Второ, нека да продължа.»"
+
+  - id: t137
+    speaker: moderator
+    kind: procedure
+    cues: [1027, 1028]
+    confidence: high
+    note: "«Казвате второ — да отговорите на първото, госпожа Йотова.»"
+
+  - id: t138
+    speaker: yotova
+    kind: interjection
+    cues: [1029, 1029]
+    confidence: medium
+    note: "«Но то е свързано с това.»"
+
+  - id: t139
+    speaker: gyurov
+    kind: reply
+    cues: [1030, 1034]
+    confidence: medium
+    note: "Оборва твърдението за урязани трудови права: «Това не отговаря на истината. Недейте да лъжете или просто не сте прочели какво каза Конституционният съд.»"
+
+  - id: t140
+    speaker: yotova
+    kind: reply
+    cues: [1035, 1052]
+    confidence: medium
+    note: "Обяснява какво точно е възражението на Конституционния съд — процедурата (преходни и заключителни разпоредби), а не съдържанието; «за да видят хората … че наистина се краде от техните права». Първите думи («Господин Гюров, все пак трябва да сме коректни») може да са на водещата."
+
+  - id: t141
+    speaker: gyurov
+    kind: reply
+    cues: [1053, 1088]
+    confidence: high
+    note: "«Никой нищо не краде.» Отговорът за фискалния резерв (6,8 млрд. евро), за връщането на парите от Банката за развитие в бюджета и за това, че сегашният бюджет е минал без обсъждане."
+
+  - id: t142
+    speaker: yotova
+    kind: reply
+    cues: [1089, 1102]
+    confidence: high
+    note: "«След този порой от думи, три неща да кажа.» — 69 становища, само три против; решението за парите е било на Гюров; не намира трето оправдание."
+
+  - id: t143
+    speaker: moderator
+    kind: transition
+    cues: [1103, 1103]
+    confidence: high
+    note: "«Нека да отговори господин Гюров.»"
+
+  - id: t144
+    speaker: gyurov
+    kind: reply
+    cues: [1104, 1106]
+    confidence: high
+    note: "«Да, те бяха върнати в касичката на българските граждани, а не в черната каса на властта.»"
+
+  - id: t145
+    speaker: yotova
+    kind: question
+    cues: [1107, 1108]
+    confidence: high
+    note: "«Точно така. А как бяха върнати в касичката на българските граждани?»"
+
+  - id: t146
+    speaker: moderator
+    kind: procedure
+    cues: [1109, 1109]
+    confidence: high
+    note: "«Бърз отговор, моля, защото има още много други теми.»"
+
+  - id: t147
+    speaker: yotova
+    kind: interjection
+    cues: [1110, 1111]
+    confidence: medium
+    note: "«Ако не говорите върху мен, трябва да си задам въпрос.» — протест, че водещата я прекъсва; тя отговаря в 1112."
+
+  - id: t148
+    speaker: moderator
+    kind: procedure
+    cues: [1112, 1112]
+    confidence: high
+    note: "«Не говоря върху вас, но трябва да спазваме правилата, които всички са одобрили.»"
+
+  - id: t149
+    speaker: yotova
+    kind: question
+    cues: [1113, 1113]
+    confidence: medium
+    note: "«Защо като дойде новото правителство, завари не просто бюджет на нула, а с близо минус 3 милиарда?»"
+
+  - id: t150
+    speaker: moderator
+    kind: procedure
+    cues: [1114, 1114]
+    confidence: high
+    note: "«Секундите свършиха. Наистина, госпожо Йотова, отговорете, моля.»"
+
+  - id: t151
+    speaker: yotova
+    kind: reply
+    cues: [1115, 1115]
+    confidence: high
+    note: "«Фактите говорят тогава, когато казвам 6,8 милиарда. Това е което оставихме на следващото правителство.» — редакторът потвърди, че в 1110–1115 говорят само Йотова и водещата (amb-a13)."
+
+  - id: t152
+    speaker: moderator
+    kind: question
+    cues: [1116, 1128]
+    confidence: high
+    note: "Пренасочва към бюджета, който предстои, и задава въпроса за инфлацията, цените и доходите: какво може да направи президентът според правомощията си; завършва с «Господин Гюров.»"
+
+  - id: t153
+    speaker: gyurov
+    kind: answer
+    cues: [1129, 1142]
+    confidence: high
+    note: "Защо предишният бюджет е бил лош: задължавал е и бъдещите поколения; покупателната способност пада; България излиза от трите държави с най-нисък дълг."
+    asides:
+      - cue: 1132
+        speaker: moderator
+        kind: procedure
+        confidence: high
+        overlap: true
+
+  - id: t154
+    speaker: moderator
+    kind: question
+    cues: [1143, 1146]
+    confidence: high
+    note: "«Ако спечелите сега в неделя на балотажа, бихте били президентът, който или ще подпише указа за новия бюджет, или ще му наложи вето… Къде е границата между отговорността и популизма?»"
+
+  - id: t155
+    speaker: gyurov
+    kind: answer
+    cues: [1147, 1162]
+    confidence: high
+    note: "Ще следи за допълнителни разходи и дългове; твърди, че бюджетът е бил скрит преди изборите, и изрежда тежестта от около 2 млрд. евро, липсата на мерки за разходите и 1,5 млрд. «срещу празни графи»."
+
+  - id: t156
+    speaker: moderator
+    kind: time_call
+    cues: [1163, 1163]
+    confidence: high
+    note: "«Имате още 30 секунди. Искате ли да ги използвате?»"
+
+  - id: t157
+    speaker: gyurov
+    kind: answer
+    cues: [1164, 1164]
+    confidence: high
+    note: "Какво трябва да направи президентската институция: да събере синдикати и работодатели, за да не се стига до вето."
+
+  - id: t158
+    speaker: moderator
+    kind: procedure
+    cues: [1165, 1183]
+    confidence: high
+    note: "Извинява се, че говори върху кандидатите, и задава на Йотова въпроса за правомощията на президента при инфлация и високи цени."
+
+  - id: t159
+    speaker: yotova
+    kind: answer
+    cues: [1184, 1265]
+    confidence: high
+    note: "«Следващият бюджет ще го разпиша аз.» Оспорва данните за свръхдефицита (5,8% и документите от 2024 г.), защитава бюджетната политика на правителството и казва какво ще гледа тя: доходите на най-бедните, инвестициите, пенсиите, учителските заплати, цените на топлото и тока; сравнява с мерките в Гърция."
+
+  - id: t160
+    speaker: moderator
+    kind: transition
+    cues: [1266, 1267]
+    confidence: high
+    note: "«Уважаеми кандидати, следва тази част, в която вие директно може да задавате въпроси.»"
+
+  - id: t161
+    speaker: gyurov
+    kind: reply
+    cues: [1268, 1268]
+    confidence: medium
+    note: "«Много бърз отговор. Свръхдефицитът е на базата на новите разчети по новия бюджет, а не на този, който ние изпълнявахме.»"
+
+  - id: t162
+    speaker: yotova
+    kind: interjection
+    cues: [1269, 1269]
+    confidence: medium
+    note: "«Но той е заварен.»"
+
+  - id: t163
+    speaker: gyurov
+    kind: reply
+    cues: [1270, 1271]
+    confidence: high
+    note: "«Той е заварен и точно там ние не видяхме никакви мерки от страна на държавата.» / «…българските граждани и българският бизнес отново биват изтупани като един брашнен чувал…»"
+
+  - id: t164
+    speaker: moderator
+    kind: transition
+    cues: [1272, 1272]
+    confidence: high
+    note: "«Бърз отговор, госпожа Йотова.»"
+
+  - id: t165
+    speaker: yotova
+    kind: reply
+    cues: [1273, 1291]
+    confidence: high
+    note: "Обещава да не се крият разходи и да спре неизплащането към общините; нарича документите за дефицита фалшиви; припомня обещанията за «златен дъжд» от инвестиции; казва, че референдумът е поискан, за да се каже истината на хората."
+
+  - id: t166
+    speaker: gyurov
+    kind: reply
+    cues: [1292, 1297]
+    confidence: high
+    note: "Референдумът е обявен за противоконституционен от Конституционния съд; настояването за него е популизъм; данъкът върху свръхпечалбата е еднократен, а разходите не са — «диагноза за проблем»."

@@ -1,0 +1,65 @@
+id: bnt-debate-yotova-gyurov-2026-10-29
+version: 0.1.0
+status: draft
+lang: bg
+
+title: "Дебат за президент: Илияна Йотова – Андрей Гюров (БНТ, 29.10.2026)"
+
+broadcast:
+  channel: "БНТ 1 (БНТ 4, БНР)"
+  date: "2026-10-29"
+  duration: "PT1H51M18S"
+  language: "bg"
+
+source:
+  type: "machine-transcription"
+  engine: "Whisper large-v3 (без диаризация)"
+  url: "https://gist.github.com/BorisThoris/f29a74bbf0acba4ad583a74ab71404c9"
+  retrieved: "2026-10-31"
+
+credits:
+  - "Препис: BorisThoris (GitHub) — публикуван като публичен gist на 29.10.2026: https://gist.github.com/BorisThoris/f29a74bbf0acba4ad583a74ab71404c9"
+  - "Структуриране, атрибуция на говорителите, корекции и редакция: този проект, с помощта на изкуствен интелект (вж. docs/METHOD.md)."
+
+generated:
+  tool: "scripts/build_xml.py"
+  model: "deepseek-flash (DeepSeek Harness)"
+  method: "LLM-assisted attribution: the transcript was read semantically, turn boundaries were set at the moderator's hand-offs and at clear changes of addressee, and every turn was given a confidence level. No audio or video of the broadcast was available; the raw ASR text was not modified."
+
+participants:
+  - id: moderator
+    role: moderator
+    name: "Поли Златарева"
+    name_lat: "Polia Zlatareva"
+    affiliation: "водеща, БНТ"
+    note: "Име, потвърдено от редактора на проекта; в преписа присъства само обръщението «госпожо Златарева»."
+    verified: true
+  - id: yotova
+    role: candidate
+    name: "Илияна Йотова"
+    name_lat: "Iliana Yotova"
+    affiliation: "кандидат за президент; вицепрезидент 2017–2026"
+    note: "Бюлетина № 25; кандидат за вицепрезидент – Илиян Вълчев."
+    verified: true
+  - id: gyurov
+    role: candidate
+    name: "Андрей Гюров"
+    name_lat: "Andrey Gyurov"
+    affiliation: "независим кандидат, издигнат от инициативен комитет"
+    note: "Бюлетина № 4 (Гюров – Кандев); според Йотова кандидатурата е подкрепена и от партии."
+    verified: true
+
+disclaimers:
+  - "Транскриптът е машинно разпознат (Whisper large-v3) без диаризация. Възможни са грешки в отделни думи, пропуснати изречения и неточни граници между репликите."
+  - "Атрибуцията на говорещите е направена с помощта на изкуствен интелект по съдържанието на репликите и не е сверена с официален запис на предаването. За всяка реплика е посочена степен на увереност."
+  - "Този документ не е официален препис и не може да служи като доказателство за казаното. При цитиране проверявайте оригиналното излъчване."
+  - "Текстът е редакторски обработен за четене: очевидните грешки на разпознаването са поправени, а пунктуацията и границите на изреченията следват смисъла, а не сегментите на машинния препис. Дословният изход на разпознаването е запазен в <source> на всяка реплика и в приложението (corrections)."
+
+conventions:
+  - "Един <turn> = едно непрекъснато изказване на един говорител; start/end са времената на първия и последния ред от преписа."
+  - "<aside> = кратка намеса на друг говорител, след която първият продължава; вложена е на мястото си в изказването."
+  - "<seg n> = ред от суровия препис (n = номер на ред във файла); from/to са отмествания в знаци, когато репликата започва или свършва по средата на ред."
+  - "overlap=true означава едновременна реч с предходната реплика; interrupts сочи прекъснатата реплика."
+  - "confidence: high = границите и говорителят са еднозначни; medium = изведени по косвени признаци; low = възможна е друга атрибуция (вж. appendix/ambiguities)."
+  - "Корекциите не променят смисъла; несигурните места не се поправят, а се отбелязват като unclear и се маркират във визуализацията."
+  - "Празнините в записа (липсващ звук в източника) се отбелязват като <gap>, а не се запълват с предположения."

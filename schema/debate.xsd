@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Schema for the structured transcript of the BNT presidential debate
+  Yotova – Gyurov, 29.10.2026.
+
+  Design notes:
+  * The XML is a derived artefact. It is generated from
+    data/source/transcript-raw.txt + data/attribution/*.yml by scripts/build_xml.py.
+    Do not edit build/debate.xml by hand.
+  * Text is verbatim ASR output. Editorial fixes live in <appendix>/<corrections>
+    and are applied by renderers, never by rewriting the transcript itself.
+  * One <turn> = one continuous utterance by one speaker. When another speaker
+    cuts in briefly and the first speaker resumes, the interjection is nested as
+    <aside> inside the turn (document order is preserved).
+  * <seg> preserves cue granularity: n = line number in the raw file,
+    from/to = character offsets into that cue when a turn starts or ends
+    mid-cue (used for overlaps and for moderator interjections that the ASR
+    merged into one cue).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:d="urn:debate:2026"
+           targetNamespace="urn:debate:2026"
+           elementFormDefault="qualified">
+
+  <xs:simpleType name="tc">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{1,2}:[0-5][0-9]:[0-5][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="confidence">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="high"/>
+      <xs:enumeration value="medium"/>
+      <xs:enumeration value="low"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="speakerId">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(moderator|yotova|gyurov)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="turnKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="opening"/>
+      <xs:enumeration value="greeting"/>
+      <xs:enumeration value="question"/>
+      <xs:enumeration value="answer"/>
+      <xs:enumeration value="reply"/>
+      <xs:enumeration value="interjection"/>
+      <xs:enumeration value="time_call"/>
+      <xs:enumeration value="procedure"/>
+      <xs:enumeration value="transition"/>
+      <xs:enumeration value="prompt"/>
+      <xs:enumeration value="closing"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="asideKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="interjection"/>
+      <xs:enumeration value="time_call"/>
+      <xs:enumeration value="procedure"/>
+      <xs:enumeration value="prompt"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================ elements ============================ -->
+
+  <xs:element name="seg">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="n" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="from" type="xs:nonNegativeInteger"/>
+          <xs:attribute name="to" type="xs:nonNegativeInteger"/>
+          <xs:attribute name="corrected" type="xs:boolean"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="p" type="xs:string"/>
+
+  <xs:element name="text">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="d:p"/>
+        <xs:element ref="d:aside"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="d:seg" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="aside">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="d:p" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="speaker" type="d:speakerId" use="required"/>
+      <xs:attribute name="kind" type="d:asideKind" use="required"/>
+      <xs:attribute name="start" type="d:tc" use="required"/>
+      <xs:attribute name="cue" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="confidence" type="d:confidence" use="required"/>
+      <xs:attribute name="overlap" type="xs:boolean" default="false"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="turn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="d:text"/>
+        <xs:element ref="d:source" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="speaker" type="d:speakerId" use="required"/>
+      <xs:attribute name="kind" type="d:turnKind" use="required"/>
+      <xs:attribute name="start" type="d:tc" use="required"/>
+      <xs:attribute name="end" type="d:tc" use="required"/>
+      <xs:attribute name="confidence" type="d:confidence" use="required"/>
+      <xs:attribute name="overlap" type="xs:boolean" default="false"/>
+      <xs:attribute name="interrupts" type="xs:IDREF"/>
+      <xs:attribute name="truncated" type="xs:boolean" default="false"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="d:turn" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="title" type="xs:string" use="required"/>
+      <xs:attribute name="from" type="d:tc" use="required"/>
+      <xs:attribute name="to" type="d:tc" use="required"/>
+      <xs:attribute name="status" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="complete"/>
+            <xs:enumeration value="partial"/>
+            <xs:enumeration value="planned"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="person">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="role" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="moderator"/>
+            <xs:enumeration value="candidate"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="name-lat" type="xs:string"/>
+      <xs:attribute name="affiliation" type="xs:string"/>
+      <xs:attribute name="note" type="xs:string"/>
+      <xs:attribute name="verified" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ambiguity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="question" type="xs:string"/>
+        <xs:element name="reading" type="xs:string" maxOccurs="unbounded"/>
+        <xs:element name="resolution" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="turn" type="xs:IDREF"/>
+      <xs:attribute name="cues" type="xs:string" use="required"/>
+      <xs:attribute name="time" type="xs:string"/>
+      <xs:attribute name="quote" type="xs:string"/>
+      <xs:attribute name="status" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="resolved"/>
+            <xs:enumeration value="open"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="correction">
+    <xs:complexType>
+      <xs:attribute name="n" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="original" type="xs:string" use="required"/>
+      <xs:attribute name="corrected" type="xs:string" use="required"/>
+      <xs:attribute name="why" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="unclear">
+    <xs:complexType>
+      <xs:attribute name="n" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="text" type="xs:string" use="required"/>
+      <xs:attribute name="why" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="gap">
+    <xs:complexType>
+      <xs:attribute name="from" type="d:tc" use="required"/>
+      <xs:attribute name="to" type="d:tc" use="required"/>
+      <xs:attribute name="reason" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="debate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="meta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string"/>
+              <xs:element name="broadcast">
+                <xs:complexType>
+                  <xs:attribute name="channel" type="xs:string" use="required"/>
+                  <xs:attribute name="date" type="xs:date" use="required"/>
+                  <xs:attribute name="duration" type="xs:duration" use="required"/>
+                  <xs:attribute name="language" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="source">
+                <xs:complexType>
+                  <xs:attribute name="type" type="xs:string" use="required"/>
+                  <xs:attribute name="engine" type="xs:string" use="required"/>
+                  <xs:attribute name="url" type="xs:anyURI" use="required"/>
+                  <xs:attribute name="retrieved" type="xs:date" use="required"/>
+                  <xs:attribute name="sha256" type="xs:string" use="required"/>
+                  <xs:attribute name="cues" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="credit" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="generated">
+                <xs:complexType>
+                  <xs:attribute name="tool" type="xs:string" use="required"/>
+                  <xs:attribute name="model" type="xs:string" use="required"/>
+                  <xs:attribute name="date" type="xs:date" use="required"/>
+                  <xs:attribute name="method" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="participants">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="d:person" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="disclaimer" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="conventions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="rule" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="coverage">
+                <xs:complexType>
+                  <xs:attribute name="from" type="d:tc" use="required"/>
+                  <xs:attribute name="to" type="d:tc" use="required"/>
+                  <xs:attribute name="cues" type="xs:string" use="required"/>
+                  <xs:attribute name="turns" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="body">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="d:section" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="appendix">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ambiguities" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="d:ambiguity" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="corrections" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="d:correction" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="rule" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="unclear" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="d:unclear" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="gaps" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="d:gap" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+      <xs:attribute name="lang" type="xs:language" use="required"/>
+      <xs:attribute name="version" type="xs:string" use="required"/>
+      <xs:attribute name="status" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="draft"/>
+            <xs:enumeration value="review"/>
+            <xs:enumeration value="final"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="text-mode" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="verbatim"/>
+            <xs:enumeration value="corrected"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

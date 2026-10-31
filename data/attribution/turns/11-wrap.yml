@@ -1,0 +1,44 @@
+# Hand-verified attribution, section 11: the wrap-up
+# (cues 1815-1833, 1:50:36-1:51:18).
+turns:
+  - id: t283
+    speaker: moderator
+    kind: closing
+    cues: [1815, 1828]
+    confidence: high
+    note: "Благодари на кандидатите и на зрителите; пита как искат да завърши дебатът — с ръкостискане или с «довиждане от местата»."
+
+  - id: t284
+    speaker: gyurov
+    kind: interjection
+    cues: [1829, 1829]
+    confidence: medium
+    note: "«Аз ще си подам ръка, разбира се.» — редът е разпознат с грешно лице на глагола."
+
+  - id: t285
+    speaker: yotova
+    kind: interjection
+    cues: [1830, 1830]
+    confidence: medium
+    note: "«Разбира се.»"
+
+  - id: t286
+    speaker: moderator
+    kind: closing
+    cues: [1831, 1831]
+    confidence: high
+    note: "«Заповядайте.» — кани ги да си подадат ръка."
+
+  - id: t287
+    speaker: yotova
+    kind: closing
+    cues: [1832, 1832]
+    confidence: high
+    note: "«Аз успехи желая, господин Гюров, така както ви пожелах първия ден, в който ви назначиха служебен министър-председател.»"
+
+  - id: t288
+    speaker: gyurov
+    kind: closing
+    cues: [1833, 1833]
+    confidence: high
+    note: "«Благодаря.»"

@@ -1,0 +1,281 @@
+# Hand-verified attribution, section 8: the candidates question each other
+# (cues 1298-1608, 1:20:02-1:37:33).
+#
+# Structure: the moderator announces two questions each, Gyurov first by the ЦИК
+# draw; then a long answer, a rules dispute, an out-of-turn counter-question, and
+# Yotova's two questions. Around 1:20:30-1:20:55 and 1:24:00-1:24:15 several
+# speakers overlap in 1-2 cue turns; those are medium and are described in
+# amb-a15. The source has a 30-second gap at 1:31:27 (cue 1523 -> 1524).
+turns:
+  - id: t167
+    speaker: moderator
+    kind: transition
+    cues: [1298, 1310]
+    confidence: high
+    note: "Обяснява правилата: по 10 минути, по два директни въпроса, ред по жребия на ЦИК; първи е Гюров."
+
+  - id: t168
+    speaker: gyurov
+    kind: reply
+    cues: [1311, 1314]
+    confidence: medium
+    note: "Довършва темата от s07: оспорва, че Конституционният съд е обявил референдума за противоконституционен, и обяснява какво е било предложението им. Редове 1312–1313 са разпознати фрагментарно и може да са на други говорители."
+
+  - id: t169
+    speaker: yotova
+    kind: interjection
+    cues: [1315, 1315]
+    confidence: high
+    note: "«Господин Гюров, не заблуждавайте хората.»"
+
+  - id: t170
+    speaker: moderator
+    kind: procedure
+    cues: [1316, 1316]
+    confidence: high
+    note: "«Реплика сега и от вас…»"
+
+  - id: t171
+    speaker: yotova
+    kind: reply
+    cues: [1317, 1317]
+    confidence: medium
+    note: "«Мнозинство се налага лесно, отговорност се налага трудно.»"
+
+  - id: t172
+    speaker: moderator
+    kind: procedure
+    cues: [1318, 1318]
+    confidence: high
+    note: "Напомня, че десетте минути вече вървят, и дава думата на Гюров за първия му въпрос."
+
+  - id: t173
+    speaker: gyurov
+    kind: question
+    cues: [1319, 1321]
+    confidence: high
+    note: "Първи въпрос към Йотова: свободата на словото, «добри и лоши медии» и използването на пресцентъра на Министерския съвет в кампанията."
+
+  - id: t174
+    speaker: moderator
+    kind: procedure
+    cues: [1322, 1322]
+    confidence: high
+    note: "«Моля да спазваме времето си. Заповядайте отговор.»"
+
+  - id: t175
+    speaker: yotova
+    kind: answer
+    cues: [1323, 1361]
+    confidence: high
+    note: "Отговор за свободата на медиите и за собствената си биография; сетне разказва как е видяла министър-председател на «часовника» преди централната емисия да моли политически партньор «да не разтуря сглобката»."
+
+  - id: t176
+    speaker: moderator
+    kind: procedure
+    cues: [1362, 1362]
+    confidence: high
+    note: "«Сега, вие може да зададете въпрос.»"
+
+  - id: t177
+    speaker: yotova
+    kind: interjection
+    cues: [1363, 1364]
+    confidence: medium
+    note: "«Какъв е регламентът? Аз имам един…» — пита за правилата, преди да продължи."
+
+  - id: t178
+    speaker: moderator
+    kind: procedure
+    cues: [1365, 1369]
+    confidence: high
+    note: "Обяснява, че тук няма право на дублираща реплика; повтаря го няколко пъти."
+
+  - id: t179
+    speaker: yotova
+    kind: reply
+    cues: [1370, 1375]
+    confidence: medium
+    note: "Довършва мисълта си: «И наистина се очудвам… независимо кой е президент или премиер, трябва добре да познава тези правила за националната и обществената медия.»"
+
+  - id: t180
+    speaker: yotova
+    kind: question
+    cues: [1376, 1385]
+    confidence: high
+    note: "Пита Гюров за негово твърдение: «Когато бяха арестувани двамата мъже, Вие казахте, че по този начин отново в България има възродителен процес. Продължавате ли да твърдите това?» Задава въпроса извън реда, в края на собственото си изказване — потвърдено от редактора (amb-a15)."
+
+  - id: t181
+    speaker: gyurov
+    kind: reply
+    cues: [1386, 1391]
+    confidence: medium
+    note: "Отговаря, че винаги е давал страната ни като пример за толерантност и етнически мир; разменя с нея «Това ли е въпросът?» / «Да». Родът на глагола в преписа («давала») е грешка на разпознаването."
+
+  - id: t182
+    speaker: moderator
+    kind: procedure
+    cues: [1392, 1392]
+    confidence: high
+    note: "«Моля сега да отговорите на въпроса…»"
+
+  - id: t183
+    speaker: yotova
+    kind: reply
+    cues: [1393, 1396]
+    confidence: high
+    note: "«Не слагайте чужди думи в моите уста»; твърди, че съмишленици на Гюров, включително депутати от «Прогресивна България», разпространяват фалшиви новини за нея."
+
+  - id: t184
+    speaker: gyurov
+    kind: reply
+    cues: [1397, 1410]
+    confidence: high
+    note: "«Не съм говорил аз за възродителен процес» — казва, че е говорил за закъснялата борба с олигархията; после се връща към въпроса за медиите като коректив на властта."
+
+  - id: t185
+    speaker: moderator
+    kind: procedure
+    cues: [1411, 1414]
+    confidence: high
+    note: "«Имате още време да отговорите, ако желаете.»"
+
+  - id: t186
+    speaker: gyurov
+    kind: reply
+    cues: [1415, 1417]
+    confidence: high
+    note: "«Аз нямам какво повече да отговоря, защото не съм използвал такива думи.»"
+
+  - id: t187
+    speaker: moderator
+    kind: procedure
+    cues: [1418, 1419]
+    confidence: high
+    note: "«Редът сега обаче да зададете втория си въпрос към госпожа Йотова.»"
+
+  - id: t188
+    speaker: yotova
+    kind: interjection
+    cues: [1420, 1420]
+    confidence: medium
+    note: "«Аз тук искам да кажа нещо по този въпрос.»"
+
+  - id: t189
+    speaker: moderator
+    kind: procedure
+    cues: [1421, 1425]
+    confidence: high
+    note: "«Само че ще изчакаме, за да бъдем честни… Задайте си вашия втори въпрос, а вие ще имате възможност да отговорите и на двата.»"
+
+  - id: t190
+    speaker: gyurov
+    kind: question
+    cues: [1426, 1434]
+    confidence: high
+    note: "Втори въпрос към Йотова: ще се извини ли на българските майки за помилванията на наркотрафиканти и на каква база е взела решенията."
+
+  - id: t191
+    speaker: yotova
+    kind: answer
+    cues: [1435, 1496]
+    confidence: high
+    note: "Отговаря, че кампанията на Гюров е изградена върху лъжи; обяснява процедурата по помилване, предоставила е документите на прокуратурата и разказва един от случаите (болно дете, решение на английския съд). Завършва с въпрос към него."
+
+  - id: t192
+    speaker: moderator
+    kind: procedure
+    cues: [1497, 1498]
+    confidence: high
+    note: "Пита дали въпросът е риторичен и обявява, че времето на Йотова е свършило."
+
+  - id: t193
+    speaker: yotova
+    kind: interjection
+    cues: [1499, 1499]
+    confidence: medium
+    note: "«Аз имам възможност за следващия въпрос.»"
+
+  - id: t194
+    speaker: moderator
+    kind: procedure
+    cues: [1500, 1500]
+    confidence: high
+    note: "«Запомнете, моля, отговора си, ще имате възможност. Не разбрах?»"
+
+  - id: t195
+    speaker: gyurov
+    kind: interjection
+    cues: [1501, 1501]
+    confidence: high
+    note: "«Може ли да отговоря?»"
+
+  - id: t196
+    speaker: moderator
+    kind: procedure
+    cues: [1502, 1503]
+    confidence: high
+    note: "«Чакайте, ще отговорите следващия въпрос… Имате право на въпроса.»"
+
+  - id: t197
+    speaker: yotova
+    kind: question
+    cues: [1504, 1522]
+    confidence: high
+    note: "Първият ѝ въпрос към Гюров: за тона на кампанията — «с демагогия, с лъжи, с лични нападки… през тролове», и за натиска върху съпруга ѝ; «вие съгласен ли си с такава кампания?»"
+
+  - id: t198
+    speaker: gyurov
+    kind: answer
+    cues: [1523, 1540]
+    confidence: medium
+    note: "«Отговарям веднага.» — после звукът в източника липсва 30 секунди (вж. gap 1:31:27–1:31:57) и отговорът продължава по средата: за медицинската комисия, за двамата сменени лекари и за това, че хуманното е болният да се лекува."
+
+  - id: t199
+    speaker: moderator
+    kind: procedure
+    cues: [1541, 1541]
+    confidence: medium
+    note: "«…Следваме регламента.» — редът започва с откъс от репликата на Гюров («че в тази…»), после водещата поема."
+
+  - id: t200
+    speaker: yotova
+    kind: reply
+    cues: [1542, 1580]
+    confidence: high
+    note: "«Господин Гюров лъже в момента.» Обяснява, че комисията се съставя по закон и с подписите на трима министри; не е лекар, за да прави заключения; документите са в прокуратурата; обвинява го, че злоупотребява с темата."
+
+  - id: t201
+    speaker: moderator
+    kind: procedure
+    cues: [1581, 1583]
+    confidence: high
+    note: "«Имате възможност да отговорите господин Гюров и с вашия отговор тази част дебата приключва.»"
+
+  - id: t202
+    speaker: gyurov
+    kind: reply
+    cues: [1584, 1601]
+    confidence: high
+    note: "Отрича да е отказал дебати (твърди, че щабът на Йотова ги е отказал); защитава позитивната си кампания и обяснява загубата от 900 000 гласа с «мръсната кампания» на опонента."
+
+  - id: t203
+    speaker: moderator
+    kind: procedure
+    cues: [1602, 1603]
+    confidence: high
+    note: "«Имате възможност, ако желаете да отговорите, да добавите аргументи.»"
+
+  - id: t204
+    speaker: gyurov
+    kind: answer
+    cues: [1604, 1607]
+    confidence: high
+    note: "Кампанията е била гражданска, близо до хората, открита и позитивна; социологическата разлика от 20% се оказала под 3% — «диагноза за качеството на кампанията»."
+
+  - id: t205
+    speaker: moderator
+    kind: transition
+    cues: [1608, 1608]
+    confidence: high
+    note: "«Изчерпахте времето си в тази част от дебата. Така приключва. Продължаваме напред.»"
