@@ -9,8 +9,10 @@ both and keep the meaning.
 1. Транскриптът е машинно разпознат (Whisper large-v3) без диаризация. Възможни са
    грешки в отделни думи, пропуснати изречения и неточни граници между репликите.
 2. Атрибуцията на говорещите е направена с помощта на изкуствен интелект по
-   съдържанието на репликите и не е сверена с официален запис на предаването. За
-   всяка реплика е посочена степен на увереност.
+   съдържанието на репликите. Отбелязаните съмнителни места (вж. приложението
+   „Двусмислени места“) са проверени по запис от редактора, но атрибуцията като
+   цяло не е сверена с официален запис на предаването. За всяка реплика е
+   посочена степен на увереност.
 3. Този документ не е официален препис и не може да служи като доказателство за
    казаното. При цитиране проверявайте оригиналното излъчване.
 4. Текстът е редакторски обработен за четене: очевидните грешки на разпознаването
@@ -24,8 +26,10 @@ both and keep the meaning.
    large-v3) with no speaker diarisation. Word errors, dropped sentences and
    imprecise turn boundaries are possible.
 2. Speaker attribution was produced with AI assistance from the content of the
-   utterances and has not been checked against an official recording of the
-   broadcast. Every turn carries a confidence level.
+   utterances. The flagged doubtful places (see the appendix) were checked against
+   the recording by the editor, but the attribution as a whole has not been verified
+   against an official recording of the broadcast. Every turn carries a confidence
+   level.
 3. This is not an official record and must not be used as evidence. Verify against
    the broadcast before quoting.
 4. The text is editorially prepared for reading: obvious recognition errors are

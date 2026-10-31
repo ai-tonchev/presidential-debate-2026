@@ -12,13 +12,15 @@ hard: short interjections, crosstalk, and numbers/names.
 | Layer | Produced by | Trust |
 | --- | --- | --- |
 | Words, timestamps | Whisper large-v3 (author of the gist) | medium: occasional errors, two gaps |
-| Speaker attribution | LLM-assisted reading (this project) | stated per turn |
-| Topic sections | LLM-assisted editorial decision | stated in `sections.yml` |
-| ASR corrections | LLM-assisted, each one logged | listed in `corrections.yml` |
-| Ambiguity resolutions | LLM-assisted, each with alternatives | listed in `corrections.yml` |
+| Speaker attribution | deepseek-flash (DeepSeek Harness), reading the text | stated per turn |
+| Topic sections | deepseek-flash, editorial decision | stated in `sections.yml` |
+| ASR corrections | deepseek-flash, each one logged | listed in `corrections.yml` |
+| Ambiguity resolutions | the editor, by ear, on top of the model's alternatives | listed in `corrections.yml` |
 
-Nothing in the chain involved listening to the audio. That is the single biggest
-limitation and the reason the disclaimers exist.
+The machine chain never heard the audio. Only the editor's spot-checks did: the
+flagged ambiguities and a handful of corrections were verified by ear, but the
+recording as a whole was not transcribed or audited again. That is the single
+biggest limitation and the reason the disclaimers exist.
 
 ## How a turn boundary is decided
 
@@ -88,8 +90,8 @@ is what `<unclear>`, `<gap>` and `<ambiguity>` are for.
 
 ## What we did *not* do
 
-* We did not listen to the broadcast, so we cannot verify tone, laughter, or
-  whether a voice is off-screen.
+* The machine pass did not listen to the broadcast, and the editor listened only
+  to the flagged spots, so tone, laughter and off-screen voices remain unverified.
 * We did not run speaker diarization (the source has none, and pyannote-style
   diarization would need the audio anyway).
 * We did not "repair" the transcript beyond the logged corrections.
